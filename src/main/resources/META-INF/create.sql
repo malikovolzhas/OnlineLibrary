@@ -1,0 +1,1 @@
+CREATE TABLE users(email nvarchar(50) PRIMARY KEY )
