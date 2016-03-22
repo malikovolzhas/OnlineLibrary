@@ -11,21 +11,17 @@ import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
 
-/**
- * Created by Меруерт on 22.03.2016.
- */
 @Path("/users")
 public class UserController {
     @Inject
     private UserService userService;
 
-
     @Path("/all")
     @GET
     @Produces("application/json")
-    public JsonArray getAll(){
+    public JsonArray getAll() {
         JsonArrayBuilder builder = Json.createArrayBuilder();
-        for (User user :userService.getAll() ) {
+        for (User user : userService.getAll()) {
             builder.add(Json.createObjectBuilder().add("email", user.getEmail()));
         }
         return builder.build();

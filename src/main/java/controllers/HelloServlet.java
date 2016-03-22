@@ -7,9 +7,6 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-/**
- * Created by Меруерт on 22.03.2016.
- */
 @WebServlet(name = "hello", urlPatterns = "/")
 public class HelloServlet extends HttpServlet {
 

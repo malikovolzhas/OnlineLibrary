@@ -1,0 +1,1 @@
+insert into users(email)values('malikov.olzhas@mail.ru')
